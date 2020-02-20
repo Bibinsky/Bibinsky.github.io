@@ -3,27 +3,70 @@ aside
 {
 	width: 30%;
 	height: 100%;
+	position: left;
 	background-color: #FFB300;
 	color:black;
 }
 
 a
 {
-	position:top left;
+	position:top center;
+	
 }
+#conteneur
+{
+	display: flex;
+	flex-direction: column;
+	
+}
+.element
+{
+	h2
+	{
+		position: centre;
 
+	}
+	ul
+	{
+		position: left;
+	}
+}
+.element: nth-child(2)
+{
+	h2
+	{
+		position: centre;
+	}
+	p
+	{
+		position: justify;
+	}
+}
+.element: nth-childe(3)
+{
+	h2
+	{
+		position: center;
+	}
+
+}
 i
 {
 	position: center;
 }
-
+div
+{
+	width: 70%; 
+	height: 100%;
+	position: right;
+}
 h1
 {
 	color: black;
-	font-size: 45px;
+	font-size: 35px;
 }
 
-.mark
+mark
 {
 	color: #FFB900;
 }
@@ -37,6 +80,7 @@ h2
 ul
 {
 	font-size: 10px;
+	position :left;
 }
 
 p
