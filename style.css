@@ -1,25 +1,26 @@
 
 aside
 {
-	float: left;
+	display: flex;
+
 	width: 30%;
 	height: 100%;
-	margin: auto;
+	
 	background-color: #FFB300;
 	color:black;
 }
 
 img
 {
-	position:top center;
 	border-radius: 50%;
-	
+	align-self: center;
 }
 #conteneur
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-between space-around;
+	padding: 12px;
 	
 }
 .element
@@ -28,12 +29,18 @@ img
 	{
 		position: centre;
 		background-color: black;
+		color:#FFB300;
+		font-family: : calibri;
+
 
 	}
-	ul
+	div
 	{
 		position: left;
-		font-size: 16px;
+	}
+	p
+	{
+		position: left;
 	}
 }
 .element: nth-child(2)
@@ -41,20 +48,33 @@ img
 	h2
 	{
 		position: centre;
+		background-color: black;
+		color:#FFB300;
+		font-family: : calibri;
 	}
 	p
 	{
-		position: justify;
+		position: center;
 		font-size: 16px
+		font-style:calibri;
 	}
 }
 .element: nth-childe(3)
+
 {
+	position: center;
+}
 	h2
 	{
 		position: center;
+		background-color: black;
+		color:#FFB300;
+		font-style: calibri;
 	}
-
+	p
+	{
+		position: center;
+	}
 }
 i
 {
@@ -62,8 +82,9 @@ i
 }
 article
 {
-	float: right;
-	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	width: 70%; 
 	height: 100%;
 	position: right;
@@ -73,43 +94,48 @@ h1
 {	
 
 	color: black;
-	font-size: 35px;
+	font-size: 32px;
+	font-family: calibri;
+	
 }
 
 strong
 {
 	color: #FFB300;
-	
+	font-family: calibri;
+	font-weight: bold;
 }
 
 	p
 	{
 		font-size: 16px;
+		font-family: calibri;
 	}
 h2
 {
 	font-size: 22px;
 	position: left;
+	font-family: calibri;
 
 }
 
-ul
+div
 {
-	font-size: 10px;
+	font-size: 12px;
 	position :left;
-}
+	font-family: calibri;
 
+}
 p
 {
 	font-size: 12px;
+	font-family:  calibri;
+	position: wright;
 }
 
-ol
-{
-	font-size: 12px;
-}
 
 h3
 {
-	font-size: 16px
+	font-size: 16px;
+	font-family:  calibri
 }
