@@ -14,48 +14,62 @@ body {
 
 aside /*partie personnelle*/{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 30%;
     background-color: #FFB300;
     color: black;
     margin: 0px;
 }
-.figure{
-position: absolute;
-align-self: center;
-}
-.img {
+img {
+    border: .2rem solid rgba(0,0,0,0.15) #FFB300;
     border-radius: 50%;
+    position: relative;
+    align-self: center;
+    margin-top: 2rem;
 
 }
 
-#conteneur {
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 12px;
+    
 }
-
-h1 {
-    color: black;
-    font-size: 32px;
+aside p{
+    padding: .3rem;
 }
-
-.element h2 {
+.about {
+    flex-grow: 1
+}
+aside section > h2 {
     background-color: black;
     color: #FFB300;
-    flex-grow: 1;
+    text-align: center;
 }
-
+.loisirs {
+    padding: .5rem;
+    text-align: center;
+}
+i {
+    border-style: solid;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    padding-top: 7px;
+}
 h2 {
-    font-size: 22px;
+    font-size: 1.4rem;
 }
 
 h3 {
     font-size: 1rem;
 }
 
-article /* partie cursus*/{
+main /* partie cursus*/{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -71,6 +85,11 @@ strong {
 }
 h1{
     font-size: 2rem;
+}
+h2 span{
+    border-bottom: 1px solid #FFB300;
+    font-size: 14rem;
+    
 }
 h4{
     font-size: 1.2rem;
@@ -88,48 +107,36 @@ hr {
     margin-right: 15px;
 }
 
-.element i {
-    border-style: solid;
-    border-radius: 50%;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 2rem;
-    height: 50px;
-    width: 50px;
-    padding-top: 7px;
-}
+
 article i
 {
 color:#FFB300;
 }
 
-element .e3{
-	justify-content: center;
-}
-
 
 article{
     display: flex;
-
-    justify-content: space-evenly;
     margin: 30px;
-    align-items: center;
+    align-items: flex-start;
+}
+   
+article  > div: first-child{
 
-*article>iv{
     display: flex;
     flex-direction: column;
     width: 30%;
-
 }
 h3{
     font-size: 1.3rem;
+    margin: .1rem;
 }
 h4{
     font-size: 1.2rem;
+    margin: .1rem;
 }
-*article>div:first-child {
+article > div:last-child{
 display: flex;
 flex-direction: column;
-padding: 1rem 3rem 1rem 1rem;
-width: 70%
+width: 70%;
+padding-top: 0.1rem;
 }
